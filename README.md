@@ -1,3 +1,3 @@
 # ttrpg-bot
 
-TTRPG Bot
+A TTRPG Bot (Only really does dice rolling atm)
