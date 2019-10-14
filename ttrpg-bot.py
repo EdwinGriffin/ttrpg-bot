@@ -118,8 +118,8 @@ async def on_message(message):
                 for result in final:
                     final_str += result
                 final_str = str(final_str)
-                str_out = 'You rolled ' + init_str + 'initially' + '\n' \
-                    'This became ' + adv_str + 'after advantage' + '\n' \
+                str_out = 'You rolled ' + init_str + 'initially.' + '\n' \
+                    'This became ' + adv_str + 'after advantage and explosions.' + '\n' \
                         'Your final result was: ' + final_str
                 await message.channel.send(str_out)
             else:
