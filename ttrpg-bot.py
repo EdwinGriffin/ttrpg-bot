@@ -125,7 +125,9 @@ async def on_message(message):
                 await message.channel.send(str_out)
             else:
                 output = parse_dice(text)
-                await message.channel.send('You rolled ' + str(output[0]) +  ' initially\nThis became ' + str(output[1]) + ' after advantage\nYour final result was: ' + str(output[2]))
+                await message.channel.send('You rolled ' + str(output[0]) +  ' initially.\n' \
+                    'This became ' + str(output[1]) + ' after advantage and explosions.\n' \
+                        'Your final result was: ' + str(output[2]))
     except:
         await message.channel.send('Command Unrecognised')
 client.run(TOKEN)
