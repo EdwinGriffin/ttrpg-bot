@@ -43,7 +43,7 @@ def roll(num, die, adv = 0):
     #Create the random values for the roll (inc. adv/dis)
     for i in range(0, num + abs(adv)):
         roll_list.append(random.randint(1, die))
-    current = roll_list
+    current = roll_list.copy()
     
     #Check to see if there is advantage or disadvantage, and subtract the appropriate values
     if adv > 0:
