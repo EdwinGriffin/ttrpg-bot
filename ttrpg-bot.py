@@ -85,6 +85,7 @@ async def on_message(message):
             if '+' in text:
                 dice_list = text.split('+')
                 for dice in dice_list:
+                    dice = dice.strip()
                     output.append(parse_dice(dice))
                 initial = []
                 adv = []
