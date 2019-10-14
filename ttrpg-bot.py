@@ -3,20 +3,17 @@ import discord
 import random
 from dotenv import load_dotenv
 
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
-GUILDS = os.getenv('DISCORD_GUILD')
+# Local .env access
+#load_dotenv()
+#TOKEN = os.getenv('DISCORD_TOKEN')
+
+#heroku .env access
+TOKEN = os.environ.get('TOKEN')
 
 client = discord.Client()
 
 @client.event
 async def on_ready():
-    num_guilds = 0
-    for guild in client.guilds:
-        if guild.name in GUILDS:
-            num_guilds += 1
-        if num_guilds == len(GUILDS):
-            break
     print(
         f'{client.user} is connected to the following guilds:\n'
         f'{client.guilds}'
