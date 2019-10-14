@@ -83,7 +83,7 @@ async def on_message(message):
             str_out = "Hello!" + '\n' \
                 "I'm ttrpg-bot and currently all I can do is roll dice because my master hasn't added anything else yet." + '\n' \
                 "Things I can do: " + '\n' \
-                    '1. Roll dice using the "/r (number of dice)d(number of faces on the die)" syntax' + '\n' \
+                    '1. Roll dice using the "/r [number of dice]d[number of faces on the die]" syntax' + '\n' \
                         '-- For example: "/r 1d20" or "/r 2d10"' + '\n' \
                             '2. Roll dice using the advantage/disadvantage system and "adv" or "dis" as keywords' + '\n' \
                                 '-- For example: "/r 1d20adv1" or "/r 2d6dis2"' + '\n' \
