@@ -1,1 +1,1 @@
-worker: python ttrpg-bot.py
+worker: python ttrpg-bot.py 
